@@ -1,5 +1,5 @@
 //
-//  ExampleViewController.swift
+//  ViewController.swift
 //  TCARxSwift
 //
 //  Created by tk1 on 10/23/2023.
@@ -9,7 +9,7 @@
 import UIKit
 import TCARxSwift
 
-class ExampleViewController: UIViewController {
+class ViewController: UIViewController {
     
     var testView = CAView()
 
@@ -17,6 +17,11 @@ class ExampleViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(testView)
         testView.frame = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 300.0)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
 
