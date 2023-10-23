@@ -1,0 +1,6 @@
+framework module Pods_TCARxSwift_Tests {
+  umbrella header "Pods-TCARxSwift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - TCARxSwift (0.1.0)
+
+DEPENDENCIES:
+  - TCARxSwift (from `../`)
+
+EXTERNAL SOURCES:
+  TCARxSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCARxSwift: cbbaacbaa7e33fa2993a6e90747acffbb293ba4c
+
+PODFILE CHECKSUM: 4b9e73e24c069c9f5fa9ee2614f663a8bacc63d5
+
+COCOAPODS: 1.13.0
