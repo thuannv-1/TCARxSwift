@@ -1,9 +1,8 @@
 {
   "name": "TCARxSwift",
-  "version": "0.1.0",
-  "summary": "A short description of TCARxSwift.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/tk1/TCARxSwift",
+  "version": "0.1.2",
+  "summary": "TCARxSwift is ......",
+  "homepage": "https://github.com/thuannv-1/TCARxSwift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +11,13 @@
     "tk1": "thuan2609.tk1@gmail.com"
   },
   "source": {
-    "git": "https://github.com/tk1/TCARxSwift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/thuannv-1/TCARxSwift.git",
+    "tag": "v0.1.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "14.0"
   },
-  "source_files": "TCARxSwift/Classes/**/*"
+  "source_files": "Source/**/*.swift",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }
