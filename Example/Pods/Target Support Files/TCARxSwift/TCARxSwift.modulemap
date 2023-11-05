@@ -1,6 +1,0 @@
-framework module TCARxSwift {
-  umbrella header "TCARxSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
