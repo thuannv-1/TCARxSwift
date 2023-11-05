@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
     s.name             = 'TCARxSwift'
-    s.version          = '0.1.8'
+    s.version          = '0.1.9'
     s.summary          = 'TCARxSwift is ......'
     s.homepage         = 'https://github.com/thuannv-1/TCARxSwift'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,4 +10,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '14.0'
     s.source_files = 'TCARxSwift/**/*.swift'
     s.swift_version = '5.0'
+    
+    s.dependency 'RxSwift', '~> 6.6.0'
 end

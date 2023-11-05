@@ -6,5 +6,6 @@ target 'TCARxSwift' do
   use_frameworks!
 
   # Pods for TCARxSwift
+  pod 'RxSwift'
 
 end

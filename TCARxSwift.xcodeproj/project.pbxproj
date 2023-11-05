@@ -14,6 +14,7 @@
 		3E0D756D2AF7A32800211752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0D756C2AF7A32800211752 /* Assets.xcassets */; };
 		3E0D75702AF7A32800211752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0D756E2AF7A32800211752 /* LaunchScreen.storyboard */; };
 		3E0D75782AF7A49000211752 /* TCARxSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3E0D75772AF7A49000211752 /* TCARxSwift.podspec */; };
+		3E0D757A2AF7A5F300211752 /* TestAAA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D75792AF7A5F300211752 /* TestAAA.swift */; };
 		FDB8587004823B69F8AC0F01 /* Pods_TCARxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7106562560BE58439A431E6B /* Pods_TCARxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		3E0D756F2AF7A32800211752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0D75712AF7A32800211752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E0D75772AF7A49000211752 /* TCARxSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TCARxSwift.podspec; sourceTree = "<group>"; };
+		3E0D75792AF7A5F300211752 /* TestAAA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAAA.swift; sourceTree = "<group>"; };
 		54A70F673B7C310146A124D4 /* Pods-TCARxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCARxSwift.release.xcconfig"; path = "Target Support Files/Pods-TCARxSwift/Pods-TCARxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		5CC862EBA36BBB4DC62B396F /* Pods-TCARxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCARxSwift.debug.xcconfig"; path = "Target Support Files/Pods-TCARxSwift/Pods-TCARxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		7106562560BE58439A431E6B /* Pods_TCARxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCARxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			children = (
 				3E0D75632AF7A32800211752 /* AppDelegate.swift */,
 				3E0D75652AF7A32800211752 /* SceneDelegate.swift */,
+				3E0D75792AF7A5F300211752 /* TestAAA.swift */,
 				3E0D75672AF7A32800211752 /* ViewController.swift */,
 				3E0D75692AF7A32800211752 /* Main.storyboard */,
 				3E0D756C2AF7A32800211752 /* Assets.xcassets */,
@@ -105,6 +108,7 @@
 				3E0D755C2AF7A32800211752 /* Sources */,
 				3E0D755D2AF7A32800211752 /* Frameworks */,
 				3E0D755E2AF7A32800211752 /* Resources */,
+				4E3A8BB454D33599DDE0D3EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +189,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E3A8BB454D33599DDE0D3EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCARxSwift/Pods-TCARxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCARxSwift/Pods-TCARxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCARxSwift/Pods-TCARxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -195,6 +216,7 @@
 				3E0D75682AF7A32800211752 /* ViewController.swift in Sources */,
 				3E0D75642AF7A32800211752 /* AppDelegate.swift in Sources */,
 				3E0D75662AF7A32800211752 /* SceneDelegate.swift in Sources */,
+				3E0D757A2AF7A5F300211752 /* TestAAA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.8;
+				MARKETING_VERSION = 0.1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tk1.TCARxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -388,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.8;
+				MARKETING_VERSION = 0.1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tk1.TCARxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
