@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
     s.name             = 'TCARxSwift'
-    s.version          = '0.1.4'
+    s.version          = '0.1.5'
     s.summary          = 'TCARxSwift is ......'
     s.homepage         = 'https://github.com/thuannv-1/TCARxSwift'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
