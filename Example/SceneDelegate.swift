@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  TCARxSwift
+//  Example
 //
-//  Created by Thuan Nguyen on 05/11/2023.
+//  Created by Thuan Nguyen on 27/01/2024.
 //
 
 import UIKit
