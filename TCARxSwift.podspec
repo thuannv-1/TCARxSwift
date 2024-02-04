@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
     s.name             = 'TCARxSwift'
-    s.version          = '0.1.14'
+    s.version          = '0.1.15'
     s.summary          = 'TCARxSwift is ......'
     s.homepage         = 'https://github.com/thuannv-1/TCARxSwift'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -19,6 +19,5 @@ Pod::Spec.new do |s|
     s.dependency 'Reusable', '~> 4.1.2'
     s.dependency 'Then', '~> 3.0.0'
     s.dependency 'SDWebImage', '~> 5.18.10'
-    s.dependency 'JGProgressHUD', '~> 2.2'
     s.dependency 'SnapKit', '~> 5.0.0'
 end
