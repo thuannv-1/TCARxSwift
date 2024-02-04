@@ -7,6 +7,6 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
 }

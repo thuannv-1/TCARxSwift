@@ -8,38 +8,52 @@
 import UIKit
 
 // MARK: - Position
-extension UIView {
-    
-    public var width: CGFloat {
+public extension UIView {
+    var width: CGFloat {
         return frame.size.width
     }
     
-    public var height: CGFloat {
+    var height: CGFloat {
         return frame.size.height
     }
     
-    public var top: CGFloat {
+    var top: CGFloat {
         return frame.origin.y
     }
     
-    public var bottom: CGFloat {
+    var bottom: CGFloat {
         return frame.origin.y + frame.size.height
     }
     
-    public var left: CGFloat {
+    var left: CGFloat {
         return frame.origin.x
     }
     
-    public var right: CGFloat {
+    var right: CGFloat {
         return frame.origin.x + frame.size.width
     }
 }
 
 // MARK: - Rotation
-extension UIView {
+public extension UIView {
     func setTransformRotation(toDegrees angleInDegrees: CGFloat) {
         let angleInRadians = angleInDegrees / 180.0 * CGFloat.pi
         let rotation = self.transform.rotated(by: angleInRadians)
         self.transform = rotation
+    }
+}
+
+public extension UIView {
+    func makeScaleAnimation(completionHandler: @escaping () -> Void ) {
+        UIView.animate(withDuration: 0.2) { [unowned self] in
+            let scaleTransform = CGAffineTransform(scaleX: 0.86, y: 0.86)
+            self.transform = scaleTransform
+        } completion: { _ in
+            UIView.animate(withDuration: 0.2) { [unowned self] in
+                self.transform = .identity
+            } completion: { _ in
+                completionHandler()
+            }
+        }
     }
 }

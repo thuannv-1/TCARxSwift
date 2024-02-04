@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-extension Reactive where Base: UIViewController {
+public extension Reactive where Base: UIViewController {
     var error: Binder<Error> {
         return Binder(base) { viewController, error in
             viewController.showError(message: error.localizedDescription)

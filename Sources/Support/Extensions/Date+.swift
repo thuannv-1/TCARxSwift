@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     func extractDate(format: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
@@ -15,7 +15,7 @@ extension Date {
     }
 }
 
-extension Date {
+public extension Date {
     static func dates(from fromDate: Date, to toDate: Date) -> [Date] {
         var dates: [Date] = []
         var date = fromDate

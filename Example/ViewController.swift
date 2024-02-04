@@ -12,10 +12,5 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let mockView = MockView()
-        view.addSubview(mockView)
-        mockView.frame = view.bounds
     }
 }
-

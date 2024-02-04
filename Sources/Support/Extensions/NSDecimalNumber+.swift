@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension NSDecimalNumber {
+public extension NSDecimalNumber {
     func toCurrency(locale: Locale?) -> String? {
         let formatter = NumberFormatter()
         formatter.locale = locale ?? Locale.current

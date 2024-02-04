@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension CALayer {
+public extension CALayer {
     func applyShadow(color: UIColor = .secondaryLabel,
                      alpha: Float = 0.3,
                      x: CGFloat = 0,

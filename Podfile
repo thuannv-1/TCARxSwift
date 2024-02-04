@@ -9,14 +9,16 @@ target 'TCARxSwift' do
   
   # Features
   pod 'Localize-Swift', '~> 3.2'
-
+  pod 'Reusable', '4.1.2'
+  pod 'Then', '3.0.0'
+  pod 'SDWebImage', '5.18.10'
+  pod 'SnapKit', '~> 5.0.0'
+  
   target 'TCARxSwiftTests' do
-    
   end
   
   target 'Example' do
     use_frameworks!
-    # Pods for Example
   end
   
 end

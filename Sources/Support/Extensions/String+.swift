@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension String {
+public extension String {
     func toMessagePopupAttributed() -> NSAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 6

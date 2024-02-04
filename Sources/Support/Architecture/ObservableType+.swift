@@ -9,8 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-extension ObservableType {
-    
+public extension ObservableType {
     func catchErrorJustComplete() -> Observable<Element> {
         return catchError { _ in
             return Observable.empty()
@@ -36,7 +35,7 @@ extension ObservableType {
     }
 }
 
-extension ObservableType where Element == Bool {
+public extension ObservableType where Element == Bool {
     func not() -> Observable<Bool> {
         return map(!)
     }
@@ -67,7 +66,7 @@ private func getThreadName() -> String {
     }
 }
 
-extension ObservableType {
+public extension ObservableType {
     func dump() -> Observable<Self.Element> {
         return self.do(onNext: { element in
             let threadName = getThreadName()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     func setLineSpacing(lineSpacing: CGFloat = 0.0,
                         lineHeightMultiple: CGFloat = 0.0,
                         _ alignment: NSTextAlignment = .left) {
