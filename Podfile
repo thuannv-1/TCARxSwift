@@ -6,6 +6,9 @@ target 'TCARxSwift' do
   # Rx
   pod 'RxSwift', '6.6.0'
   pod 'RxCocoa', '6.6.0'
+  
+  # Features
+  pod 'Localize-Swift', '~> 3.2'
 
   target 'TCARxSwiftTests' do
     

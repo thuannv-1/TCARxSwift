@@ -13,4 +13,6 @@ Pod::Spec.new do |s|
     
     s.dependency 'RxSwift', '~> 6.6.0'
     s.dependency 'RxCocoa', '~> 6.6.0'
+    
+    s.dependency 'Localize-Swift', '~> 3.2'
 end
