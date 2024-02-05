@@ -36,6 +36,13 @@
 		3E3B48BA2B70AEF200775705 /* ViewController+Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48B92B70AEF200775705 /* ViewController+Features.swift */; };
 		3E3B48BC2B70B14D00775705 /* UIView+SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48BB2B70B14D00775705 /* UIView+SubViews.swift */; };
 		3E3B48CB2B70B81000775705 /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48CA2B70B81000775705 /* SettingHeader.swift */; };
+		3E3B48CD2B70BF3F00775705 /* ShowWebViewNavigatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48CC2B70BF3F00775705 /* ShowWebViewNavigatorType.swift */; };
+		3E3B48DF2B70BF9700775705 /* WKWebviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48D52B70BF9700775705 /* WKWebviewUseCase.swift */; };
+		3E3B48E02B70BF9700775705 /* WKWebviewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48D62B70BF9700775705 /* WKWebviewNavigator.swift */; };
+		3E3B48E12B70BF9700775705 /* WKWebviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48D72B70BF9700775705 /* WKWebviewViewModel.swift */; };
+		3E3B48E22B70BF9700775705 /* WKWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48D82B70BF9700775705 /* WKWebviewViewController.swift */; };
+		3E3B48E32B70BF9700775705 /* SendMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48DA2B70BF9700775705 /* SendMailViewController.swift */; };
+		3E3B48E62B70C1D800775705 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48E52B70C1D800775705 /* BaseViewController.swift */; };
 		3E7E82522B6FC5B40051329B /* SettingCellVMType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E824F2B6FC5B40051329B /* SettingCellVMType.swift */; };
 		3E7E82542B6FC5B40051329B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E82512B6FC5B40051329B /* SettingCell.swift */; };
 		3E7E825B2B6FD35F0051329B /* UITableViewCell+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E825A2B6FD35F0051329B /* UITableViewCell+Animation.swift */; };
@@ -113,11 +120,17 @@
 		3E3B48B92B70AEF200775705 /* ViewController+Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Features.swift"; sourceTree = "<group>"; };
 		3E3B48BB2B70B14D00775705 /* UIView+SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SubViews.swift"; sourceTree = "<group>"; };
 		3E3B48CA2B70B81000775705 /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
+		3E3B48CC2B70BF3F00775705 /* ShowWebViewNavigatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWebViewNavigatorType.swift; sourceTree = "<group>"; };
+		3E3B48D52B70BF9700775705 /* WKWebviewUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebviewUseCase.swift; sourceTree = "<group>"; };
+		3E3B48D62B70BF9700775705 /* WKWebviewNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebviewNavigator.swift; sourceTree = "<group>"; };
+		3E3B48D72B70BF9700775705 /* WKWebviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebviewViewModel.swift; sourceTree = "<group>"; };
+		3E3B48D82B70BF9700775705 /* WKWebviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebviewViewController.swift; sourceTree = "<group>"; };
+		3E3B48DA2B70BF9700775705 /* SendMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMailViewController.swift; sourceTree = "<group>"; };
+		3E3B48E52B70C1D800775705 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3E5778FA2B64EB720084846C /* TCARxSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TCARxSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E7E824F2B6FC5B40051329B /* SettingCellVMType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCellVMType.swift; sourceTree = "<group>"; };
 		3E7E82512B6FC5B40051329B /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3E7E825A2B6FD35F0051329B /* UITableViewCell+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Animation.swift"; sourceTree = "<group>"; };
-		3EA5F1EE2B6FAAC600989007 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3EC787CD2B64E84D001CC529 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC787CF2B64E84D001CC529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EC787D12B64E84D001CC529 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -275,10 +288,48 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3E3B48CE2B70BF7E00775705 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B48E42B70C1CC00775705 /* BaseViewController */,
+				3E3B48D92B70BF9700775705 /* SendMail */,
+				3E3B48D42B70BF9700775705 /* WKWebview */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E3B48D42B70BF9700775705 /* WKWebview */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B48D52B70BF9700775705 /* WKWebviewUseCase.swift */,
+				3E3B48D62B70BF9700775705 /* WKWebviewNavigator.swift */,
+				3E3B48D72B70BF9700775705 /* WKWebviewViewModel.swift */,
+				3E3B48D82B70BF9700775705 /* WKWebviewViewController.swift */,
+			);
+			path = WKWebview;
+			sourceTree = "<group>";
+		};
+		3E3B48D92B70BF9700775705 /* SendMail */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B48DA2B70BF9700775705 /* SendMailViewController.swift */,
+			);
+			path = SendMail;
+			sourceTree = "<group>";
+		};
+		3E3B48E42B70C1CC00775705 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B48E52B70C1D800775705 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		3E7E82292B6FB9640051329B /* Navigators */ = {
 			isa = PBXGroup;
 			children = (
 				040898562B6F7C09008CC4AC /* NavigatorType.swift */,
+				3E3B48CC2B70BF3F00775705 /* ShowWebViewNavigatorType.swift */,
 			);
 			path = Navigators;
 			sourceTree = "<group>";
@@ -286,6 +337,7 @@
 		3E7E822B2B6FBABD0051329B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3E3B48CE2B70BF7E00775705 /* ViewControllers */,
 				3E7E82292B6FB9640051329B /* Navigators */,
 				3E3B48B42B70AB2300775705 /* Views */,
 				3E3B48B32B70AB1F00775705 /* Cells */,
@@ -319,7 +371,6 @@
 		3EC787E72B64E86E001CC529 /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
-				3EA5F1EE2B6FAAC600989007 /* LICENSE.txt */,
 				3E5778FA2B64EB720084846C /* TCARxSwift.podspec */,
 			);
 			name = Deployment;
@@ -599,6 +650,7 @@
 			files = (
 				040898872B6F7ECE008CC4AC /* Storage.swift in Sources */,
 				0408987B2B6F7ECE008CC4AC /* UILabel+.swift in Sources */,
+				3E3B48E62B70C1D800775705 /* BaseViewController.swift in Sources */,
 				040898822B6F7ECE008CC4AC /* ObservableType+.swift in Sources */,
 				040898812B6F7ECE008CC4AC /* UIViewControlle+Debug.swift in Sources */,
 				0408987F2B6F7ECE008CC4AC /* Driver+.swift in Sources */,
@@ -612,11 +664,17 @@
 				0408987A2B6F7ECE008CC4AC /* UIViewController+.swift in Sources */,
 				3E3B48B82B70ABE600775705 /* UIView+Animation.swift in Sources */,
 				3E34C0E62B60C97700C5B3F0 /* TCARxSwift.docc in Sources */,
+				3E3B48E12B70BF9700775705 /* WKWebviewViewModel.swift in Sources */,
 				040898832B6F7ECE008CC4AC /* ErrorTracker.swift in Sources */,
 				0408987E2B6F7ECE008CC4AC /* UIImage+.swift in Sources */,
 				040898572B6F7C0F008CC4AC /* NavigatorType.swift in Sources */,
+				3E3B48CD2B70BF3F00775705 /* ShowWebViewNavigatorType.swift in Sources */,
+				3E3B48DF2B70BF9700775705 /* WKWebviewUseCase.swift in Sources */,
 				3E7E82542B6FC5B40051329B /* SettingCell.swift in Sources */,
 				040898842B6F7ECE008CC4AC /* ViewModelType.swift in Sources */,
+				3E3B48E32B70BF9700775705 /* SendMailViewController.swift in Sources */,
+				3E3B48E22B70BF9700775705 /* WKWebviewViewController.swift in Sources */,
+				3E3B48E02B70BF9700775705 /* WKWebviewNavigator.swift in Sources */,
 				040898852B6F7ECE008CC4AC /* ActivityTracker.swift in Sources */,
 				0408987C2B6F7ECE008CC4AC /* UIViewController+Rx.swift in Sources */,
 				3E3B48B62B70AB3400775705 /* EmptyView.swift in Sources */,

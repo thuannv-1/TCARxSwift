@@ -8,7 +8,10 @@
 import Foundation
 
 public enum TCARxSwiftConstants {
-    static let termUrl = "https://sites.google.com/view/thuanvterms"
-    static let privacyUrl = "https://sites.google.com/view/thuanvprivacy"
-    static let mySite = "https://thuannv.com/"
+    public static let supportMail = "support@thuannv.com"
+    public static let termUrl = "https://sites.google.com/view/thuanvterms"
+    public static let privacyUrl = "https://sites.google.com/view/thuanvprivacy"
+    public static let mySite = "https://thuannv.com/"
+    public static let scannerURL = "itms-apps://itunes.apple.com/app/id6446470704"
+    public static let dailyToDoUrl = "itms-apps://itunes.apple.com/app/id6444704985"
 }
