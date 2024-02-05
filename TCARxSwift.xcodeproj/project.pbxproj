@@ -35,6 +35,7 @@
 		3E3B48B82B70ABE600775705 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48B72B70ABE600775705 /* UIView+Animation.swift */; };
 		3E3B48BA2B70AEF200775705 /* ViewController+Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48B92B70AEF200775705 /* ViewController+Features.swift */; };
 		3E3B48BC2B70B14D00775705 /* UIView+SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48BB2B70B14D00775705 /* UIView+SubViews.swift */; };
+		3E3B48CB2B70B81000775705 /* SettingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B48CA2B70B81000775705 /* SettingHeader.swift */; };
 		3E7E82522B6FC5B40051329B /* SettingCellVMType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E824F2B6FC5B40051329B /* SettingCellVMType.swift */; };
 		3E7E82542B6FC5B40051329B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E82512B6FC5B40051329B /* SettingCell.swift */; };
 		3E7E825B2B6FD35F0051329B /* UITableViewCell+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E825A2B6FD35F0051329B /* UITableViewCell+Animation.swift */; };
@@ -111,6 +112,7 @@
 		3E3B48B72B70ABE600775705 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		3E3B48B92B70AEF200775705 /* ViewController+Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Features.swift"; sourceTree = "<group>"; };
 		3E3B48BB2B70B14D00775705 /* UIView+SubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SubViews.swift"; sourceTree = "<group>"; };
+		3E3B48CA2B70B81000775705 /* SettingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeader.swift; sourceTree = "<group>"; };
 		3E5778FA2B64EB720084846C /* TCARxSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TCARxSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E7E824F2B6FC5B40051329B /* SettingCellVMType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCellVMType.swift; sourceTree = "<group>"; };
 		3E7E82512B6FC5B40051329B /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		3E3B48B42B70AB2300775705 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3E3B48CA2B70B81000775705 /* SettingHeader.swift */,
 				3E3B48B52B70AB3400775705 /* EmptyView.swift */,
 			);
 			path = Views;
@@ -605,6 +608,7 @@
 				040898782B6F7ECE008CC4AC /* UIView+Position.swift in Sources */,
 				040898752B6F7ECE008CC4AC /* CALayer+Shadow.swift in Sources */,
 				040898862B6F7ECE008CC4AC /* TCARxSwiftConstants.swift in Sources */,
+				3E3B48CB2B70B81000775705 /* SettingHeader.swift in Sources */,
 				0408987A2B6F7ECE008CC4AC /* UIViewController+.swift in Sources */,
 				3E3B48B82B70ABE600775705 /* UIView+Animation.swift in Sources */,
 				3E34C0E62B60C97700C5B3F0 /* TCARxSwift.docc in Sources */,

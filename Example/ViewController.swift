@@ -23,6 +23,7 @@ final class ViewController: UIViewController {
     
     private lazy var tableView = UITableView().with {
         $0.register(cellType: SettingCell.self)
+        $0.register(headerFooterViewType: SettingHeader.self)
         $0.delegate = self
         $0.dataSource  = self
         $0.separatorStyle = .none
@@ -68,6 +69,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             .with {
                 $0.configCell(vm: dataSource[indexPath.row].data)
             }
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   viewForHeaderInSection section: Int) -> UIView? {
+        let view = tableView.dequeueReusableHeaderFooterView(SettingHeader.self)
+        view?.text = "Moccck?"
+        return view
     }
     
     func tableView(_ tableView: UITableView,
