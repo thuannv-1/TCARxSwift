@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+.swift
+//  UITableViewCell+Animation.swift
 //  TCARxSwift
 //
 //  Created by Thuan Nguyen on 04/02/2024.

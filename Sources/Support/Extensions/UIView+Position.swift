@@ -1,5 +1,5 @@
 //
-//  UIView+.swift
+//  UIView+Position.swift
 //  smart-scanner
 //
 //  Created by Nguyen Van Thuan on 18/03/2023.
@@ -40,20 +40,5 @@ public extension UIView {
         let angleInRadians = angleInDegrees / 180.0 * CGFloat.pi
         let rotation = self.transform.rotated(by: angleInRadians)
         self.transform = rotation
-    }
-}
-
-public extension UIView {
-    func makeScaleAnimation(completionHandler: @escaping () -> Void ) {
-        UIView.animate(withDuration: 0.2) { [unowned self] in
-            let scaleTransform = CGAffineTransform(scaleX: 0.86, y: 0.86)
-            self.transform = scaleTransform
-        } completion: { _ in
-            UIView.animate(withDuration: 0.2) { [unowned self] in
-                self.transform = .identity
-            } completion: { _ in
-                completionHandler()
-            }
-        }
     }
 }

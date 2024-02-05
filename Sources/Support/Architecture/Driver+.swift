@@ -10,7 +10,6 @@ import RxSwift
 import RxCocoa
 
 public extension SharedSequenceConvertibleType {
-    
     func mapToVoid() -> SharedSequence<SharingStrategy, Void> {
         return map { _ in }
     }

@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  TCARxSwiftConstants.swift
 //  smart-scanner
 //
 //  Created by Nguyen Van Thuan on 22/03/2023.
