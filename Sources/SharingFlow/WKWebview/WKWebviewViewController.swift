@@ -13,11 +13,11 @@ import Then
 import WebKit
 import Localize_Swift
 
-final class WKWebviewViewController: UIViewController,
+final class WKWebviewViewController: BaseViewController,
                                      BindableType {
     
     var viewModel: WKWebviewViewModel!
-    var disposeBag: DisposeBag! = DisposeBag()
+    var disposeBag: DisposeBag = DisposeBag()
     
     var webView = WKWebView()
     private var estimatedProgressObserver: NSKeyValueObservation?
@@ -72,12 +72,23 @@ final class WKWebviewViewController: UIViewController,
             dismissTrigger: rightButton.rx.tap.asDriver()
         )
         
-        let output = viewModel.transform(input, disposeBag: disposeBag)
+        let output = viewModel.transform(input)
         
-        output.title.drive(titleBinder).disposed(by: disposeBag)
-        output.url.drive(urlBinder).disposed(by: disposeBag)
-        output.html.drive(htmlBinder).disposed(by: disposeBag)
+        output.title
+            .drive(titleBinder)
+            .disposed(by: disposeBag)
         
+        output.url
+            .drive(urlBinder)
+            .disposed(by: disposeBag)
+        
+        output.html
+            .drive(htmlBinder)
+            .disposed(by: disposeBag)
+        
+        output.voidAction
+            .drive()
+            .disposed(by: disposeBag)
     }
 }
 

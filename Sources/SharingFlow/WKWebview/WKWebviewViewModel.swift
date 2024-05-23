@@ -26,9 +26,10 @@ extension WKWebviewViewModel: ViewModelType {
         let title: Driver<String>
         let url: Driver<String>
         let html: Driver<String?>
+        let voidAction: Driver<Void>
     }
     
-    func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
+    func transform(_ input: Input) -> Output {
         let title = input.loadTrigger
             .map { self.title }
         
@@ -38,16 +39,18 @@ extension WKWebviewViewModel: ViewModelType {
         let html = input.loadTrigger
             .map { self.html }
         
-        input.dismissTrigger
-            .drive { _ in
+        let dismiss = input.dismissTrigger
+            .do { _ in
                 self.navigator.dimiss()
             }
-            .disposed(by: disposeBag)
+        
+        let voidAction = Driver<Void>.merge(dismiss)
         
         return Output(
             title: title,
             url: url,
-            html: html
+            html: html,
+            voidAction: voidAction
         )
     }
 }

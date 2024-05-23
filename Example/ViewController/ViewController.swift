@@ -9,21 +9,20 @@ import UIKit
 import TCARxSwift
 import SnapKit
 
-struct FeatureCellVM: SettingCellVMType {
+struct FeatureCellModel {
     var icon: UIImage?
     var title: String
 }
 
 struct TCARxSwiftFeature {
-    var data: FeatureCellVM
+    var data: FeatureCellModel
     var action: () -> Void
 }
 
 final class ViewController: UIViewController {
     
     private lazy var tableView = UITableView().with {
-        $0.register(cellType: SettingCell.self)
-        $0.register(headerFooterViewType: SettingHeader.self)
+        $0.register(cellType: FeatureCell.self)
         $0.delegate = self
         $0.dataSource  = self
         $0.separatorStyle = .none
@@ -65,22 +64,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(for: indexPath, cellType: SettingCell.self)
+        return tableView.dequeueReusableCell(for: indexPath, cellType: FeatureCell.self)
             .with {
-                $0.configCell(vm: dataSource[indexPath.row].data)
+                $0.configCell(model: dataSource[indexPath.row].data)
             }
     }
     
     func tableView(_ tableView: UITableView,
-                   viewForHeaderInSection section: Int) -> UIView? {
-        let view = tableView.dequeueReusableHeaderFooterView(SettingHeader.self)
-        view?.text = "Moccck?"
-        return view
-    }
-    
-    func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? SettingCell else {
+        guard let cell = tableView.cellForRow(at: indexPath) as? FeatureCell else {
             return
         }
         cell.makeScaleAnimation { [weak self] in

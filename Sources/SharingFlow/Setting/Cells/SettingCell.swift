@@ -10,10 +10,21 @@ import Reusable
 import Then
 import SnapKit
 
+public protocol SettingCellVMType {
+    var icon: UIImage? { get set }
+    var title: String { get set }
+}
+
+struct SettingCellVM: SettingCellVMType {
+    var icon: UIImage?
+    var title: String
+}
+
 public class SettingCell: UITableViewCell, Reusable {
     
+    // MARK: - UI Components
     private lazy var containerView = UIView().with {
-        $0.backgroundColor = .secondarySystemBackground
+        $0.backgroundColor = .white
         $0.layer.cornerRadius = 16.0
         $0.layer.cornerCurve = .continuous
     }
@@ -31,6 +42,7 @@ public class SettingCell: UITableViewCell, Reusable {
         $0.image = UIImage(systemName: "chevron.forward")
     }
     
+    // MARK: - Life Cycles
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configView()
@@ -40,9 +52,11 @@ public class SettingCell: UITableViewCell, Reusable {
         super.init(coder: coder)
         configView()
     }
-
+    
+    // MARK: - Methods
     private func configView() {
         selectionStyle = .none
+        backgroundColor = .clear
         
         contentView.addSubview(containerView)
         containerView.snp.makeConstraints {

@@ -8,7 +8,7 @@
 import UIKit
 import MessageUI
 
-public class SendMailViewController: MFMailComposeViewController {
+final class SendMailViewController: MFMailComposeViewController {
     
     public init(recepients: [String]?,
                 subject: String = "",

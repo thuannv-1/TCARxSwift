@@ -14,5 +14,3 @@ FOUNDATION_EXPORT double TCARxSwiftVersionNumber;
 FOUNDATION_EXPORT const unsigned char TCARxSwiftVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TCARxSwift/PublicHeader.h>
-
-
