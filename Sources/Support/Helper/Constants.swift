@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum TCARxSwiftConstants {
+public enum Constants {
     public static let supportMail = "support@thuannv.com"
     public static let termUrl = "https://sites.google.com/view/thuanvterms"
     public static let privacyUrl = "https://sites.google.com/view/thuanvprivacy"

@@ -8,7 +8,7 @@ target 'TCARxSwift' do
   pod 'RxCocoa', '6.6.0'
   
   # Features
-  pod 'Localize-Swift', '~> 3.2'
+  pod 'SwiftGen', '6.6.3'
   pod 'Reusable', '4.1.2'
   pod 'Then', '3.0.0'
   pod 'SDWebImage', '5.18.10'

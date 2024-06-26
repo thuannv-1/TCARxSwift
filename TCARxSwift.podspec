@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.dependency 'RxSwift', '~> 6.6.0'
     s.dependency 'RxCocoa', '~> 6.6.0'
     
-    s.dependency 'Localize-Swift', '~> 3.2'
+    s.dependency 'SwiftGen', '6.6.3'
     s.dependency 'Reusable', '~> 4.1.2'
     s.dependency 'Then', '~> 3.0.0'
     s.dependency 'SDWebImage', '~> 5.18.10'

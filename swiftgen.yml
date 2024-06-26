@@ -1,0 +1,17 @@
+xcassets:
+  inputs:
+    - Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: Sources/Support/Helper/Images.swift
+      params:
+        forceProvidesNamespaces: true
+        publicAccess: true
+
+strings:
+  inputs: Resources/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: Sources/Support/Helper/Language.swift
+    params:
+      publicAccess: public

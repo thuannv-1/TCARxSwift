@@ -28,3 +28,24 @@ public extension NavigatorType {
         navigationController.popViewController(animated: false)
     }
 }
+
+extension NavigatorType {
+    func toSafari(_ urlString: String) {
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    func share(urlString: String) {
+        let ac = UIActivityViewController(activityItems: [urlString],
+                                          applicationActivities: nil)
+        navigationController.present(ac, animated: true)
+    }
+    
+    func openAppStore(urlString: String) {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+}

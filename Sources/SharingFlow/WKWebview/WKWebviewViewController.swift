@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 import Then
 import WebKit
-import Localize_Swift
 
 final class WKWebviewViewController: BaseViewController,
                                      BindableType {
@@ -31,7 +30,7 @@ final class WKWebviewViewController: BaseViewController,
         return activity
     }()
     
-    let rightButton = UIBarButtonItem(title: "text.done".localized())
+    let rightButton = UIBarButtonItem(title: L10n.Text.done)
     
     override func viewDidLoad() {
         super.viewDidLoad()

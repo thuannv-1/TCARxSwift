@@ -23,10 +23,14 @@
 		040898832B6F7ECE008CC4AC /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408986D2B6F7ECD008CC4AC /* ErrorTracker.swift */; };
 		040898842B6F7ECE008CC4AC /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408986E2B6F7ECD008CC4AC /* ViewModelType.swift */; };
 		040898852B6F7ECE008CC4AC /* ActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408986F2B6F7ECD008CC4AC /* ActivityTracker.swift */; };
-		040898862B6F7ECE008CC4AC /* TCARxSwiftConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040898712B6F7ECD008CC4AC /* TCARxSwiftConstants.swift */; };
+		040898862B6F7ECE008CC4AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040898712B6F7ECD008CC4AC /* Constants.swift */; };
 		040898872B6F7ECE008CC4AC /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040898722B6F7ECD008CC4AC /* Storage.swift */; };
 		040898892B6F7ECE008CC4AC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040898742B6F7ECD008CC4AC /* Utils.swift */; };
 		2191C688DEC737D397CF5B89 /* Pods_TCARxSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46CC2418A64C09B8226CF9 /* Pods_TCARxSwift_Example.framework */; };
+		3E2B45172C2C453B0043B8E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2B45152C2C453B0043B8E5 /* Localizable.strings */; };
+		3E2B451A2C2C45C70043B8E5 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B45192C2C45C70043B8E5 /* Language.swift */; };
+		3E2B451C2C2C47AB0043B8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2B451B2C2C47AB0043B8E5 /* Assets.xcassets */; };
+		3E2B451E2C2C47E90043B8E5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B451D2C2C47E90043B8E5 /* Images.swift */; };
 		3E34C0E62B60C97700C5B3F0 /* TCARxSwift.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3E34C0E52B60C97700C5B3F0 /* TCARxSwift.docc */; };
 		3E34C0EC2B60C97700C5B3F0 /* TCARxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E34C0E12B60C97700C5B3F0 /* TCARxSwift.framework */; };
 		3E34C0F12B60C97700C5B3F0 /* TCARxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34C0F02B60C97700C5B3F0 /* TCARxSwiftTests.swift */; };
@@ -113,11 +117,16 @@
 		0408986D2B6F7ECD008CC4AC /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		0408986E2B6F7ECD008CC4AC /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		0408986F2B6F7ECD008CC4AC /* ActivityTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTracker.swift; sourceTree = "<group>"; };
-		040898712B6F7ECD008CC4AC /* TCARxSwiftConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCARxSwiftConstants.swift; sourceTree = "<group>"; };
+		040898712B6F7ECD008CC4AC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		040898722B6F7ECD008CC4AC /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		040898742B6F7ECD008CC4AC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2C46CC2418A64C09B8226CF9 /* Pods_TCARxSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCARxSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F58672E59D91990FF95FF34 /* Pods-TCARxSwift-TCARxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCARxSwift-TCARxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-TCARxSwift-TCARxSwiftTests/Pods-TCARxSwift-TCARxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E2B45162C2C453B0043B8E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E2B45182C2C45580043B8E5 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E2B45192C2C45C70043B8E5 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		3E2B451B2C2C47AB0043B8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E2B451D2C2C47E90043B8E5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		3E34C0E12B60C97700C5B3F0 /* TCARxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCARxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E34C0E42B60C97700C5B3F0 /* TCARxSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCARxSwift.h; sourceTree = "<group>"; };
 		3E34C0E52B60C97700C5B3F0 /* TCARxSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TCARxSwift.docc; sourceTree = "<group>"; };
@@ -239,18 +248,30 @@
 		040898702B6F7ECD008CC4AC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				040898712B6F7ECD008CC4AC /* TCARxSwiftConstants.swift */,
+				040898712B6F7ECD008CC4AC /* Constants.swift */,
 				040898722B6F7ECD008CC4AC /* Storage.swift */,
 				040898742B6F7ECD008CC4AC /* Utils.swift */,
+				3E2B45192C2C45C70043B8E5 /* Language.swift */,
+				3E2B451D2C2C47E90043B8E5 /* Images.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3E2B45142C2C450D0043B8E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B45152C2C453B0043B8E5 /* Localizable.strings */,
+				3E2B451B2C2C47AB0043B8E5 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3E34C0D72B60C97700C5B3F0 = {
 			isa = PBXGroup;
 			children = (
-				3EC787E72B64E86E001CC529 /* Deployment */,
 				3EC787CE2B64E84D001CC529 /* Example */,
+				3EC787E72B64E86E001CC529 /* Deployment */,
+				3E2B45142C2C450D0043B8E5 /* Resources */,
 				3E34C0E32B60C97700C5B3F0 /* Sources */,
 				3E34C0EF2B60C97700C5B3F0 /* Tests */,
 				3E34C0E22B60C97700C5B3F0 /* Products */,
@@ -478,6 +499,7 @@
 				3E34C0DD2B60C97700C5B3F0 /* Sources */,
 				3E34C0DE2B60C97700C5B3F0 /* Frameworks */,
 				3E34C0DF2B60C97700C5B3F0 /* Resources */,
+				3E2B45132C2C43E10043B8E5 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -557,6 +579,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 3E34C0D72B60C97700C5B3F0;
 			productRefGroup = 3E34C0E22B60C97700C5B3F0 /* Products */;
@@ -575,6 +598,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E2B451C2C2C47AB0043B8E5 /* Assets.xcassets in Resources */,
+				3E2B45172C2C453B0043B8E5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +622,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3E2B45132C2C43E10043B8E5 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen > /dev/null; then\n    swiftgen\nelse\n    if which brew > /dev/null; then\n        brew install swiftgen\n        swiftgen\n    else\n        echo \"warning: Homebrew not found. Please install homebrew and install swiftgen\"\n        echo \"warning: To install swiftgen, follow instructions at: https://github.com/SwiftGen/SwiftGen\"\n    fi\nfi\n";
+		};
 		71055BDAF585EA8928F46067 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -711,6 +754,7 @@
 				040898812B6F7ECE008CC4AC /* UIViewControlle+Debug.swift in Sources */,
 				3E5E87A12BFF80C5001C27DD /* SettingHeaderFooter.swift in Sources */,
 				0408987F2B6F7ECE008CC4AC /* Driver+.swift in Sources */,
+				3E2B451E2C2C47E90043B8E5 /* Images.swift in Sources */,
 				040898802B6F7ECE008CC4AC /* BindableType.swift in Sources */,
 				3E5126B12BF63218006B5D48 /* SettingViewModel.swift in Sources */,
 				0408987D2B6F7ECE008CC4AC /* Date+.swift in Sources */,
@@ -718,7 +762,7 @@
 				040898792B6F7ECE008CC4AC /* String+.swift in Sources */,
 				040898782B6F7ECE008CC4AC /* UIView+Position.swift in Sources */,
 				040898752B6F7ECE008CC4AC /* CALayer+Shadow.swift in Sources */,
-				040898862B6F7ECE008CC4AC /* TCARxSwiftConstants.swift in Sources */,
+				040898862B6F7ECE008CC4AC /* Constants.swift in Sources */,
 				3E5126B02BF63215006B5D48 /* SettingUseCase.swift in Sources */,
 				3E5E879A2BFF6B74001C27DD /* TCALabelStyle.swift in Sources */,
 				0408987A2B6F7ECE008CC4AC /* UIViewController+.swift in Sources */,
@@ -729,6 +773,7 @@
 				040898832B6F7ECE008CC4AC /* ErrorTracker.swift in Sources */,
 				3E5E878D2BFF63DF001C27DD /* TCARxSwiftManager.swift in Sources */,
 				3E5126AF2BF63212006B5D48 /* SettingNavigator.swift in Sources */,
+				3E2B451A2C2C45C70043B8E5 /* Language.swift in Sources */,
 				0408987E2B6F7ECE008CC4AC /* UIImage+.swift in Sources */,
 				040898572B6F7C0F008CC4AC /* NavigatorType.swift in Sources */,
 				3E3B48CD2B70BF3F00775705 /* ShowWebViewNavigatorType.swift in Sources */,
@@ -784,6 +829,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3E2B45152C2C453B0043B8E5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E2B45162C2C453B0043B8E5 /* en */,
+				3E2B45182C2C45580043B8E5 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		3EC787DA2B64E84E001CC529 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -800,6 +854,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -866,6 +921,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

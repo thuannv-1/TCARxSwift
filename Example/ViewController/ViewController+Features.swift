@@ -34,9 +34,16 @@ extension ViewController {
     
     @objc
     func settingFlowAction() {
+        struct SettingData: SettingDataType {
+            var appStoreUrl: String?
+        }
+        
+        let settingData = SettingData(appStoreUrl: "google.com")
+        
         TCARxSwift.SharingFlow.buildSetting(
             navigationController: currentNavi,
-            style: .push
+            style: .push,
+            data: settingData
         )
     }
     

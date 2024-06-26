@@ -8,9 +8,14 @@
 import RxSwift
 import RxCocoa
 
+public protocol SettingDataType {
+    var appStoreUrl: String? { get set }
+}
+
 struct SettingViewModel {
     let useCase: SettingUseCaseType
     let navigator: SettingNavigatorType
+    let data: SettingDataType
 }
 
 extension SettingViewModel {
@@ -84,11 +89,12 @@ extension SettingViewModel: ViewModelType {
                 case .term:
                     self.navigator.toTerm()
                 case .share:
-                    break
+                    guard let appStoreUrl = data.appStoreUrl else { return }
+                    self.navigator.share(urlString: appStoreUrl)
                 case .scanner:
-                    break
+                    self.navigator.openAppStore(urlString: Constants.scannerURL)
                 case .dailyToDo:
-                    break
+                    self.navigator.openAppStore(urlString: Constants.dailyToDoUrl)
                 }
             }
             .mapToVoid()

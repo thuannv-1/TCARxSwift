@@ -14,6 +14,9 @@ protocol SettingNavigatorType {
     func toReview()
     func toPrivacy()
     func toTerm() 
+    func toSafari(_ urlString: String)
+    func share(urlString: String)
+    func openAppStore(urlString: String)
 }
 
 struct SettingNavigator: NavigatorType,
@@ -31,12 +34,12 @@ extension SettingNavigator: SettingNavigatorType {
     }
     
     func toPrivacy() {
-        presentWebView(title: "settings.privacy.titte".localized(),
-                       url: TCARxSwiftConstants.privacyUrl)
+        presentWebView(title: L10n.Settings.Privacy.titte,
+                       url: Constants.privacyUrl)
     }
     
     func toTerm() {
-        presentWebView(title: "settings.term.title".localized(),
-                       url: TCARxSwiftConstants.termUrl)
+        presentWebView(title: L10n.Settings.Term.title,
+                       url: Constants.termUrl)
     }
 }

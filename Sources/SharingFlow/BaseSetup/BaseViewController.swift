@@ -15,7 +15,7 @@ class BaseViewController: UIViewController {
     }
     
     deinit {
-        print(#function, self)
+        debugPrint(#function, self)
     }
     
     // MARK: - Methods

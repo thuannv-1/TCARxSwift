@@ -15,12 +15,14 @@ extension TCARxSwift {
 // MARK: - Setting
 extension TCARxSwift.SharingFlow {
     public static func buildSetting(navigationController: UINavigationController,
-                                    style: TransitionStyle) {
+                                    style: TransitionStyle,
+                                    data: SettingDataType) {
         let useCase = SettingUseCase()
         let navigator = SettingNavigator(navigationController: navigationController)
         let viewModel = SettingViewModel(
             useCase: useCase,
-            navigator: navigator
+            navigator: navigator,
+            data: data
         )
         let viewController = SettingViewController()
         viewController.bindViewModel(to: viewModel)
