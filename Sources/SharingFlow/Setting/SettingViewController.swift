@@ -41,6 +41,8 @@ final class SettingViewController: BaseViewController,
     
     // MARK: - Private Methods
     private func setupUI() {
+        title = "Settings"
+        
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()

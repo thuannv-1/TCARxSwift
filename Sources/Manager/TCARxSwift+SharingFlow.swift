@@ -14,34 +14,53 @@ extension TCARxSwift {
 
 // MARK: - Setting
 extension TCARxSwift.SharingFlow {
-    public static func buildSetting(navigationController: UINavigationController,
-                                    style: TransitionStyle,
-                                    data: SettingDataType) {
-        let useCase = SettingUseCase()
-        let navigator = SettingNavigator(navigationController: navigationController)
-        let viewModel = SettingViewModel(
-            useCase: useCase,
-            navigator: navigator,
-            data: data
-        )
-        let viewController = SettingViewController()
-        viewController.bindViewModel(to: viewModel)
-        navigationController.goTo(viewController: viewController, style: style)
+    public class Setting {
+        public static func instance(navigationController: UINavigationController,
+                                    data: SettingDataType,
+                                    isShowDoneButton: Bool) -> UIViewController {
+            let useCase = SettingUseCase()
+            let navigator = SettingNavigator(navigationController: navigationController)
+            let viewModel = SettingViewModel(
+                useCase: useCase,
+                navigator: navigator,
+                data: data,
+                isShowDoneButton: isShowDoneButton
+            )
+            let viewController = SettingViewController()
+            viewController.bindViewModel(to: viewModel)
+            return viewController
+        }
+        
+        public static func push(navigationController: UINavigationController,
+                                data: SettingDataType) {
+            let vc = instance(navigationController: navigationController,
+                              data: data,
+                              isShowDoneButton: false)
+            navigationController.pushViewController(vc, animated: true)
+        }
+        
+        public static func present(navigationController: UINavigationController,
+                                   presentNavController: UINavigationController,
+                                   data: SettingDataType) {
+            let vc = instance(navigationController: presentNavController,
+                              data: data,
+                              isShowDoneButton: true)
+            presentNavController.viewControllers = [vc]
+            navigationController.present(presentNavController, animated: true)
+        }
     }
 }
 
 // MARK: - WKWebView
 extension TCARxSwift.SharingFlow {
-    public static func buildWKWebView(navigationController: UINavigationController,
-                                      style: TransitionStyle) {
+    public static func buildWKWebView(navigationController: UINavigationController) {
         
     }
 }
 
 // MARK: - SendMail
 extension TCARxSwift.SharingFlow {
-    public static func buildSendMail(navigationController: UINavigationController,
-                                     style: TransitionStyle) {
+    public static func buildSendMail(navigationController: UINavigationController) {
         
     }
 }

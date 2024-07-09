@@ -15,7 +15,8 @@ public protocol SettingDataType {
 struct SettingViewModel {
     let useCase: SettingUseCaseType
     let navigator: SettingNavigatorType
-    let data: SettingDataType
+    let data: SettingDataType?
+    let isShowDoneButton: Bool
 }
 
 extension SettingViewModel {
@@ -89,7 +90,7 @@ extension SettingViewModel: ViewModelType {
                 case .term:
                     self.navigator.toTerm()
                 case .share:
-                    guard let appStoreUrl = data.appStoreUrl else { return }
+                    guard let appStoreUrl = data?.appStoreUrl else { return }
                     self.navigator.share(urlString: appStoreUrl)
                 case .scanner:
                     self.navigator.openAppStore(urlString: Constants.scannerURL)
