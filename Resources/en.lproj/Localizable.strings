@@ -1,0 +1,103 @@
+
+// MARK: - Common
+"text.done" = "Done";
+"text.error" = "Error";
+"text.oke" = "OK";
+"text.cancel" = "Cancel";
+"text.feature.coming.soon.title" = "Coming Soon !!!";
+"text.feature.coming.soon.description" = "This feature is in development and will be released in the next version";
+
+// MARK: - Home
+"home.title" = "Smart Cleaner";
+"home.premium" = "Premium";
+"home.photo.and.video" = "Photo & Video";
+"home.contacts" = "Contacts";
+"home.cleaning.guide" = "Clean Guide";
+"home.cleaning.description" = "How to clean up your iphone manually";
+"home.no.gallery.permision" = "No gallery permission";
+"home.no.contacts.permision" = "No contacts permission";
+
+// MARK: - Premium
+"premium.title" = "Smart Cleaner Premium";
+"premium.album.benefit" = "Cleanup photo albums";
+"premium.contacts.benefit" = "Clean up contacts";
+"premium.add.benefit" = "No adds";
+"premium.family.benefit" = "Family sharing";
+"premium.weekly.name" = "Weekly";
+"premium.monthly.name" = "Monthly";
+"premium.yearly.name" = "Yearly";
+"premium.week.description" = "One week subscription";
+"premium.month.description" = "One month subscription";
+"premium.year.description" = "One year subscription";
+"premium.week.time.unit" = "week";
+"premium.month.time.unit" = "month";
+"premium.year.time.unit" = "year";
+"premium.continue.button" = "Continue";
+"premium.term" = "Term";
+"premium.privacy" = "Privacy";
+"premium.restore" = "Restore";
+
+// MARK: - Settings
+"settings.title" = "Settings";
+"settings.guide.section" = "SUPPORT";
+"settings.more.app.section" = "MORE APPS";
+"settings.contact.title" = "Contact us";
+"settings.review.title" = "Give us a review";
+"settings.privacy.titte" = "Privacy policy";
+"settings.term.title" = "Term of use";
+"settings.share.title" = "Share";
+"settings.scanner.title" = "Smart Scanner";
+"settings.daily.to.do.title" = "Daily To Do";
+
+// MARK: - Quick Clean
+"quick.clean.title" = "Quick Clean";
+
+// MARK: - Gallery
+"gallery.title" = "Media to Clean";
+
+// MARK: - Contacts
+"contacts.title" = "Contacts";
+
+// MARK: - Contacts
+"contacts.title" = "Contacts";
+"contacts.all.contact" = "All Contact";
+"contacts.duplicate.names" = "Duplicate Names";
+"contacts.duplicate.numbers" = "Duplicate Numbers";
+"contacts.duplicate.emails" = "Duplicate Emails";
+"contacts.incomplete.names" = "Incomplete Names";
+"contacts.incomplete.numbers" = "Incomplete Numbers";
+
+// MARK: - Clean Up Guide
+"clean.up.guide.title" = "Cleaning Guide";
+
+// MARK: - All Contact
+"all.contact.title" = "All Contact";
+"all.contact.select" = "Select";
+"all.contact.deselect" = "Deselect";
+"all.contact.delete" = "Delete";
+"all.contact.confirm.delete.title" = "Are you sure?";
+"all.contact.confirm.delete.message" = "Delete the selected contacts";
+
+// MARK: - duplicate
+"duplicate.names.title" = "Duplicate Names";
+"duplicate.numbers.title" = "Duplicate Numbers";
+"duplicate.emails.title" = "Duplicate Emails";
+"duplicate.merge.heading" = "Merged Contacts";
+"duplicate.merge.button" = "Merge";
+"duplicate.name.empty.description" = "You don't have any contacts with the same name";
+"duplicate.numbers.empty.description" = "You don't have any contacts with the same number";
+"duplicate.emails.empty.description" = "You don't have any contacts with the same email";
+"duplicate.guide.select.contact.title" = "Select Contacts To Merge";
+"duplicate.select.all.button" = "Select All";
+"duplicate.deselect.all.button" = "Deselect All";
+
+// MARK: - Incomplete
+"incomplete.names.title" = "Incomplete Names";
+"incomplete.numbers.title" = "Incomplete Numbers";
+"incomplete.names.description" = "You don't have a contact that hasn't completed the name";
+"incomplete.numbers.description" = "You don't have a contact that hasn't completed the number";
+
+// MARK: - IAP Purchased
+"iap.no.subscription.purchased.error" = "No Subscription Purchased";
+"iap.no.product.available.error" = "No Products Available";
+"iap.unknown.error" = "Process Error";

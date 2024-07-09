@@ -8,7 +8,7 @@
 import UIKit
 
 public extension UIView {
-    func makeScaleAnimation(completionHandler: @escaping () -> Void ) {
+    func makeScaleAnimation(completionHandler: @escaping () -> Void) {
         UIView.animate(withDuration: 0.2) { [unowned self] in
             let scaleTransform = CGAffineTransform(scaleX: 0.86, y: 0.86)
             self.transform = scaleTransform
@@ -17,6 +17,17 @@ public extension UIView {
                 self.transform = .identity
             } completion: { _ in
                 completionHandler()
+            }
+        }
+    }
+    
+    func makeScaleAnimation() {
+        UIView.animate(withDuration: 0.2) { [unowned self] in
+            let scaleTransform = CGAffineTransform(scaleX: 0.86, y: 0.86)
+            self.transform = scaleTransform
+        } completion: { _ in
+            UIView.animate(withDuration: 0.2) { [unowned self] in
+                self.transform = .identity
             }
         }
     }

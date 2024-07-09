@@ -1,10 +1,4 @@
 PODS:
-  - Localize-Swift (3.2.0):
-    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
-    - Localize-Swift/UIKit (= 3.2.0)
-  - Localize-Swift/LocalizeSwiftCore (3.2.0)
-  - Localize-Swift/UIKit (3.2.0):
-    - Localize-Swift/LocalizeSwiftCore
   - Reusable (4.1.2):
     - Reusable/Storyboard (= 4.1.2)
     - Reusable/View (= 4.1.2)
@@ -20,38 +14,39 @@ PODS:
     - SDWebImage/Core (= 5.18.10)
   - SDWebImage/Core (5.18.10)
   - SnapKit (5.0.1)
+  - SwiftGen (6.6.3)
   - Then (3.0.0)
 
 DEPENDENCIES:
-  - Localize-Swift (~> 3.2)
   - Reusable (= 4.1.2)
   - RxCocoa (= 6.6.0)
   - RxSwift (= 6.6.0)
   - SDWebImage (= 5.18.10)
   - SnapKit (~> 5.0.0)
+  - SwiftGen (= 6.6.3)
   - Then (= 3.0.0)
 
 SPEC REPOS:
   trunk:
-    - Localize-Swift
     - Reusable
     - RxCocoa
     - RxRelay
     - RxSwift
     - SDWebImage
     - SnapKit
+    - SwiftGen
     - Then
 
 SPEC CHECKSUMS:
-  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 220b27c9ce68e7e8157fe0a5842a596d5be077d2
+PODFILE CHECKSUM: a5a975a09a9b8a5b9f143094d29ef938a6f74494
 
 COCOAPODS: 1.13.0
